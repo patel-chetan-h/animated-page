@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Render - Application loading</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div style="display: none;">
+        <img id="block-a" class="block"
+            src="data:image/svg+xml,%3csvg%20width='80'%20height='80'%20viewBox='0%200%2080%2080'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpolygon%20points='40,16%2046,32%2064,32%2050,42%2056,58%2040,48%2024,58%2030,42%2016,32%2034,32'%20fill='%23f59e0b'%20stroke='%23b45309'%20stroke-width='2'/%3e%3crect%20x='32'%20y='58'%20width='16'%20height='6'%20rx='2'%20fill='%2378350f'/%3e%3crect%20x='28'%20y='66'%20width='24'%20height='6'%20rx='3'%20fill='%2392400e'/%3e%3crect%20x='9.5'%20y='9.5'%20width='61'%20height='61'%20rx='8'%20stroke='%234D4D4D'/%3e%3c/svg%3e"
+            alt="Block A">
+        
+        <img id="block-b" class="block" src="data:image/svg+xml,%3csvg%20width='80'%20height='80'%20viewBox='0%200%2080%2080'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20transform='translate(12,12)'%3e%3cpath%20d='M0%208%2042%200%2046%2010%204%2018Z'%20fill='%23374151'%20stroke='%230f172a'%20stroke-width='2'/%3e%3cpath%20d='M6%2014%2014%2012'%20stroke='%23ffffff'%20stroke-width='3'/%3e%3cpath%20d='M16%2012%2024%2010'%20stroke='%23ffffff'%20stroke-width='3'/%3e%3cpath%20d='M26%2010%2034%208'%20stroke='%23ffffff'%20stroke-width='3'/%3e%3cpath%20d='M36%208%2044%206'%20stroke='%23ffffff'%20stroke-width='3'/%3e%3c/g%3e%3crect%20x='14'%20y='28'%20width='52'%20height='36'%20rx='4'%20fill='%231f2937'%20stroke='%230f172a'%20stroke-width='2'/%3e%3crect%20x='18'%20y='34'%20width='44'%20height='6'%20rx='2'%20fill='%234b5563'/%3e%3crect%20x='18'%20y='44'%20width='44'%20height='6'%20rx='2'%20fill='%234b5563'/%3e%3crect%20x='18'%20y='54'%20width='44'%20height='6'%20rx='2'%20fill='%234b5563'/%3e%3crect%20x='9.5'%20y='9.5'%20width='61'%20height='61'%20rx='8'%20stroke='%234D4D4D'/%3e%3c/svg%3e" alt="Block B">
+        <img id="block-c" class="block"
+            src="data:image/svg+xml,%3csvg%20width='80'%20height='80'%20viewBox='0%200%2080%2080'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='12'%20y='18'%20width='56'%20height='44'%20rx='6'%20fill='%23111827'%20stroke='%230f172a'%20stroke-width='2'/%3e%3cg%20fill='%23e5e7eb'%3e%3crect%20x='16'%20y='20'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='26'%20y='20'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='36'%20y='20'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='46'%20y='20'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='56'%20y='20'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='66'%20y='20'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='16'%20y='54'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='26'%20y='54'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='36'%20y='54'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='46'%20y='54'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='56'%20y='54'%20width='6'%20height='6'%20rx='1'/%3e%3crect%20x='66'%20y='54'%20width='6'%20height='6'%20rx='1'/%3e%3c/g%3e%3crect%20x='18'%20y='28'%20width='12'%20height='20'%20rx='2'%20fill='%2360a5fa'/%3e%3crect%20x='34'%20y='28'%20width='12'%20height='20'%20rx='2'%20fill='%2334d399'/%3e%3crect%20x='50'%20y='28'%20width='12'%20height='20'%20rx='2'%20fill='%23f472b6'/%3e%3crect%20x='9.5'%20y='9.5'%20width='61'%20height='61'%20rx='8'%20stroke='%234D4D4D'/%3e%3c/svg%3e"
+            alt="Block C">
+        <img id="block-d" class="block"
+            src="data:image/svg+xml,%3csvg%20width='80'%20height='80'%20viewBox='0%200%2080%2080'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='14'%20y='30'%20width='52'%20height='20'%20rx='6'%20fill='%236b7280'%20stroke='%23111827'%20stroke-width='2'/%3e%3ccircle%20cx='56'%20cy='40'%20r='8'%20fill='%231f2937'%20stroke='%230ea5e9'%20stroke-width='3'/%3e%3ccircle%20cx='56'%20cy='40'%20r='3'%20fill='%2360a5fa'/%3e%3crect%20x='20'%20y='34'%20width='16'%20height='4'%20rx='2'%20fill='%239ca3af'/%3e%3crect%20x='20'%20y='40'%20width='16'%20height='4'%20rx='2'%20fill='%239ca3af'/%3e%3crect%20x='20'%20y='52'%20width='8'%20height='4'%20rx='2'%20fill='%23111827'/%3e%3crect%20x='52'%20y='52'%20width='8'%20height='4'%20rx='2'%20fill='%23111827'/%3e%3cpolygon%20points='64,36%2080,40%2064,44'%20fill='%23fbbf24'%20opacity='0.35'/%3e%3crect%20x='9.5'%20y='9.5'%20width='61'%20height='61'%20rx='8'%20stroke='%234D4D4D'/%3e%3c/svg%3e"
+            alt="Block D">
+        <img id="block-e" class="block" 
+            src="data:image/svg+xml,%3csvg%20width='80'%20height='80'%20viewBox='0%200%2080%2080'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='40'%20cy='40'%20r='30'%20fill='%234b5563'%20stroke='%23111827'%20stroke-width='2'/%3e%3ccircle%20cx='40'%20cy='28'%20r='5'%20fill='%23ffffff'%20opacity='0.9'/%3e%3ccircle%20cx='52'%20cy='40'%20r='5'%20fill='%23ffffff'%20opacity='0.9'/%3e%3ccircle%20cx='40'%20cy='52'%20r='5'%20fill='%23ffffff'%20opacity='0.9'/%3e%3ccircle%20cx='28'%20cy='40'%20r='5'%20fill='%23ffffff'%20opacity='0.9'/%3e%3ccircle%20cx='40'%20cy='40'%20r='8'%20fill='%23e5e7eb'%20stroke='%23374151'%20stroke-width='1.5'/%3e%3cpath%20d='M18%2032A22%2022%200%200%201%2040%2018'%20fill='none'%20stroke='%23ffffff'%20stroke-opacity='0.5'%20stroke-width='2'/%3e%3crect%20x='9.5'%20y='9.5'%20 width='61'%20height='61'%20rx='8'%20stroke='%234D4D4D'/%3e%3c/svg%3e"
+            alt="Block E">
+        <img id="block-f" class="block"
+            src="data:image/svg+xml,%3csvg%20width='80'%20height='80'%20viewBox='0%200%2080%2080'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3crect%20x='10'%20y='16'%20width='60'%20height='40'%20rx='6'%20fill='%232563eb'/%3e%3crect%20x='30'%20y='58'%20width='20'%20height='6'%20rx='2'%20fill='%23374151'/%3e%3crect%20x='26'%20y='66'%20width='28'%20height='4'%20rx='2'%20fill='%23111827'/%3e%3cpolygon%20points='36,28%2036,46%2052,37'%20fill='%23ffffff'%20opacity='0.95'/%3e%3crect%20x='9.5'%20y='9.5'%20width %3d'61'%20height='61'%20rx='8'%20stroke='%234D4D4D'/%3e%3c/svg%3e"
+            alt="Block F">
+    </div>
+    <div class="content-container fade-in">
+        <div>
+            <div class="quickSand-text log-container" id="log-container"></div>
+        </div>
+        <div class="cta-container">
+            <div class="link-container">
+                <a href="https://patel-chetan-h.github.io/portfolio" target="_blank"
+                    class="link link-text--highlight quickSand-text">
+                    Back to Portfolio
+
+                    <div class="link-icon">
+                        <svg fill="currentColor" width="12" height="12" viewBox="0 0 16 16"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 3L8.285 3.6965L12.075 7.5H2V8.5H12.075L8.285 12.2865L9 13L14 8L9 3Z" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+            <div class="loading-container hidden">
+                <div class="loading">
+                    <svg class="animate-spin" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.99787 2.74907C5.92398 2.26781 6.95232 2.01691 7.99583 2.01758V3.01758C7.10643 3.01768 6.23035 3.23389 5.44287 3.64765C4.6542 4.06203 3.97808 4.66213 3.47279 5.39621C2.9675 6.13029 2.64821 6.97632 2.54245 7.86138C2.51651 8.07844 2.5036 8.29625 2.50359 8.51367H1.49585C1.49602 8.23118 1.51459 7.94821 1.55177 7.66654C1.68858 6.62997 2.07326 5.64172 2.67319 4.78565C3.27311 3.92958 4.07056 3.23096 4.99787 2.74907Z"
+                            fill="#FFFFFF" />
+                        <path opacity="0.15" fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 14.0137C11.0376 14.0137 13.5 11.5512 13.5 8.51367C13.5 5.47611 11.0376 3.01367 8 3.01367C4.96243 3.01367 2.5 5.47611 2.5 8.51367C2.5 11.5512 4.96243 14.0137 8 14.0137ZM8 15.0137C11.5899 15.0137 14.5 12.1035 14.5 8.51367C14.5 4.92382 11.5899 2.01367 8 2.01367C4.41015 2.01367 1.5 4.92382 1.5 8.51367C1.5 12.1035 4.41015 15.0137 8 15.0137Z"
+                            fill="#FFFFFF" />
+                    </svg>
+                    <div class="quickSand-text text-primary text-truncate loading-text">
+                        Application Running
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid-container fade-in" id="grid-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
